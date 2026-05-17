@@ -9,28 +9,16 @@ const HomePage = () => {
       link: '/cariere'
     },
     {
-      icon: '📊',
-      title: 'Test de Aptitudini',
-      description: 'Identifică-ți punctele forte și domeniile care ți se potrivesc',
-      link: '/evaluare'
-    },
-    {
-      icon: '🧠',
-      title: 'Test MBTI',
-      description: 'Descoperă-ți tipul de personalitate din cele 16 tipuri MBTI',
-      link: '/mbti'
+      icon: '📝',
+      title: 'Teste Vocaționale',
+      description: 'Test de aptitudini și test MBTI pentru a-ți descoperi potențialul',
+      link: '/teste'
     },
     {
       icon: '💼',
       title: 'Oportunități',
       description: 'Stagii, cursuri și job-uri pentru tineri în diferite domenii',
       link: '/oportunitati'
-    },
-    {
-      icon: '📚',
-      title: 'Resurse Educaționale',
-      description: 'Articole, ghiduri și materiale pentru dezvoltarea ta profesională',
-      link: '/resurse'
     }
   ]
 
@@ -45,18 +33,12 @@ const HomePage = () => {
             <p className="text-xl md:text-2xl mb-8 text-primary-100 max-w-3xl mx-auto">
               Platforma ta de ghidare vocațională care te ajută să alegi cariera potrivită și să îți construiești viitorul profesional!
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center flex-wrap">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="/evaluare"
+                href="/teste"
                 className="bg-white text-primary-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
               >
-                Test Aptitudini 🚀
-              </Link>
-              <Link
-                href="/mbti"
-                className="bg-purple-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-purple-700 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-              >
-                Test MBTI 🧠
+                Începe un Test 📝
               </Link>
               <Link
                 href="/cariere"
@@ -78,7 +60,7 @@ const HomePage = () => {
             Instrumentele de care ai nevoie pentru a-ți planifica și construi o carieră de succes
           </p>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {features.map((feature, index) => (
               <Link
                 key={index}
@@ -142,10 +124,10 @@ const HomePage = () => {
             Primul pas către cariera ta de vis începe aici
           </p>
           <Link
-            href="/evaluare"
+            href="/teste"
             className="inline-block bg-primary-600 text-white px-10 py-4 rounded-lg font-semibold text-lg hover:bg-primary-700 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
           >
-            Începe Acum →
+            Începe un Test →
           </Link>
         </div>
       </section>

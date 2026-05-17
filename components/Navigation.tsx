@@ -20,10 +20,8 @@ const Navigation = () => {
   const navLinks = [
     { href: '/', label: 'Acasă' },
     { href: '/cariere', label: 'Explorează Cariere' },
-    { href: '/evaluare', label: 'Test Aptitudini' },
-    { href: '/mbti', label: 'Test MBTI' },
+    { href: '/teste', label: 'Teste' },
     { href: '/oportunitati', label: 'Oportunități' },
-    { href: '/resurse', label: 'Resurse' },
   ]
 
   return (

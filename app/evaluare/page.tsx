@@ -59,10 +59,39 @@ const AssessmentPage = () => {
       id: 5,
       question: 'Cum te descrii cel mai bine?',
       options: [
-        { value: 'logic', label: 'Logic și meticuloș', icon: '🤓' },
+        { value: 'logic', label: 'Logic și meticulos', icon: '🤓' },
         { value: 'empatic', label: 'Empatic și sociabil', icon: '🤝' },
         { value: 'creativ', label: 'Creativ și inovator', icon: '💡' },
         { value: 'activ', label: 'Activ și energic', icon: '⚡' },
+      ]
+    },
+    {
+      id: 6,
+      question: 'Ce activitate îți place cel mai mult?',
+      options: [
+        { value: 'creativ', label: 'Să scriu content pentru un website', icon: '📝' },
+        { value: 'dezvoltare', label: 'Să lucrez la propriile proiecte', icon: '💻' },
+        { value: 'oameni', label: 'Să învăț oamenii din ce știu', icon: '🤝' },
+        { value: 'activ', label: 'Să fac sport', icon: '🚵‍♀️' },
+      ]
+    },
+    {
+      id: 7,
+      question: 'Care este cea mai mare calitate a ta?',
+      options: [
+        { value: 'creativ', label: 'Inventivitatea', icon: '💡' },
+        { value: 'dezvoltare', label: 'Perseverența', icon: '⏳' },
+        { value: 'oameni', label: 'Generozitatea', icon: '🤝' },
+        { value: 'impact', label: 'Răbdare', icon: '🔍' },
+      ]
+    },
+    {id: 8,
+      question: 'Ce domeniu te atrage cel mai mult?',
+      options: [
+        { value: 'tehnologie', label: 'Tehnologie & IT', icon: '💻' },
+        { value: 'oameni', label: 'Sănătate/Educație', icon: '💊' },
+        { value: 'arte', label: 'Arta', icon: '🖌' },
+        { value: 'dezvoltare', label: 'Business', icon: '🧰' },
       ]
     },
   ]
@@ -122,7 +151,7 @@ const AssessmentPage = () => {
       if (value === 'analiza' || value === 'dezvoltare' || value === 'salariu') {
         scores.business += 2
       }
-      if (value === 'colaborativ' || value === 'limbi') {
+      if (value === 'colaborativ' || value === 'limbi' || value === 'oameni') {
         scores.educatie += 1
       }
     })
