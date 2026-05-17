@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import Navigation from '@/components/Navigation'
+import Providers from '@/components/Providers'
 
 export const metadata: Metadata = {
   title: 'Platformă Vocațională - Descoperă-ți Cariera',
@@ -11,10 +12,12 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="ro">
       <body className="min-h-screen bg-gray-50">
-        <Navigation />
-        <main className="pt-16">
-          {children}
-        </main>
+        <Providers>
+          <Navigation />
+          <main className="pt-16">
+            {children}
+          </main>
+        </Providers>
       </body>
     </html>
   )

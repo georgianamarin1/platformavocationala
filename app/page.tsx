@@ -35,7 +35,7 @@ const HomePage = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="/teste"
+                href="/cont?redirect=/teste"
                 className="bg-white text-primary-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
               >
                 Începe un Test 📝
@@ -124,7 +124,7 @@ const HomePage = () => {
             Primul pas către cariera ta de vis începe aici
           </p>
           <Link
-            href="/teste"
+            href="/cont?redirect=/teste"
             className="inline-block bg-primary-600 text-white px-10 py-4 rounded-lg font-semibold text-lg hover:bg-primary-700 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
           >
             Începe un Test →
